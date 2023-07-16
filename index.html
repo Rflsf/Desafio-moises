@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/Anonimo.png" alt="Foto" />
+      </div>
+      <form class="Login" onsubmit="return validarFormulario()">
+        <div class="box-user">
+          <input type="text" id="email" name="Email" required />
+          <label> <ion-icon name="mail-outline"></ion-icon> Email ID </label>
+        </div>
+        <div class="box-user">
+          <input
+            type="password"
+            id="senha"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
+          <label
+            ><ion-icon name="lock-closed-outline"></ion-icon> Password
+          </label>
+        </div>
+        <div class="forget1">
+          <input type="checkbox" name="remember" required />
+          <label> Remember me </label>
+        </div>
+        <div>
+          <a href="#" class="forget">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login
+        </button>
+      </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
